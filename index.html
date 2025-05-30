@@ -19,8 +19,8 @@
             <button class="btn-main">export<i class="ri-upload-2-fill"></i></button>
         </div>
         <div class="middle-container">
-            
-            <div class="img-uploder-container" >
+
+            <div class="img-uploder-container">
 
                 <div class="img-uploder" id="img-uploder">
                     <label for="main-img">upload image <i class="ri-upload-line"></i></label>
@@ -58,7 +58,7 @@
 
             <div class="edit-item">
                 <div class="edit-item-1">
-                    <i class="ri-brush-ai-fill"></i>
+                    <i id="pannel-setting-open" class="ri-brush-ai-fill"></i>
 
                 </div>
                 <div class="edit-item-1">
@@ -72,11 +72,51 @@
 
             <div class="edit-item-2"> ?</div>
         </div>
-        <div class="setting"></div>
-    </div>
+        <div class="setting" id="setting">
+            <div class="setting-pannel" id="setting-pannel">
+                  <div id="setting-heading"> Settings</div>
+                <form>
+                    <div>
+                        <label for="Brightness">Brightness: </label>
+                        <input type="range" id="Brightness">
+                    </div>
+
+                    <div>
+                        <label for="Contrast">Contrast: </label>
+                        <input type="range" id="Contrast">
+                    </div>
+
+                    <div>
+                        <label for="Saturation">Saturation: </label>
+                        <input type="range" id="Saturation">
+
+                    </div>
+
+                    <div>
+                        <label for="Grayscale">Grayscale: </label>
+                        <input type="range" id="Grayscale">
+                    </div>
+
+                    <div>
+                        <label for="Invert">Invert: </label>
+                        <input type="range" id="Invert">
+                    </div>
+
+                    <div>
+                        <label for="Sepia">Sepia: </label>
+                        <input type="range" id="Sepia">
+                    </div>
+
+                    <div>
+                        <label for="Blur">Blur: </label>
+                        <input type="range" id="Blur">
+
+                    </div>
+            </div>
+        </div>
 
 
-    <script src="./scripts/script.js"></script>
+        <script src="./scripts/script.js"></script>
 </body>
 
 </html>

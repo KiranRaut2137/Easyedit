@@ -13,6 +13,9 @@ body {
 .main-container {
     height: 100;
     width: 100vw;
+    position: relative;
+    overflow: hidden;
+
 }
 
 .header-container {
@@ -43,7 +46,7 @@ body {
     border-radius: 9px;
 }
 
-.btn-main i{
+.btn-main i {
     color: black;
     margin-left: 8px;
 }
@@ -174,24 +177,63 @@ body {
     border-radius: 10px;
 }
 
-#edit-img{ 
-    display:none;
-    height:80%;
+#edit-img {
+    display: none;
+    height: 80%;
     width: 80%;
     background-color: red;
 }
 
-#edit-img img{
+#edit-img img {
     height: 100%;
     width: 100%;
 }
 
-.setting{
+.setting {
     height: 100%;
     width: 100%;
     position: absolute;
-    background-color: red;
     top: 0;
     left: 0;
+    display: none;
+    cursor: pointer;
 }
 
+.setting-pannel {
+    height: 60vh;
+    width: 300px;
+    background-color: rgba(68, 67, 67, 0.993);
+    transform: translate(42vw, 15vh);
+    background: rgba(68, 67, 67, 0.81);
+    box-shadow: 0 8px 32px 0 rgba(223, 224, 247, 0.044);
+    backdrop-filter: blur(2px);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+
+.setting-pannel div{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.setting-pannel div label{
+    text-transform:capitalize;
+    color: #d8d3d3;
+    font-size: 1.2em;
+}
+
+.setting-pannel div input{
+    width: 200px;
+}
+
+.setting-pannel #setting-heading{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+}
