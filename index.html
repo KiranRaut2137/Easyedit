@@ -7,74 +7,103 @@
     <title>easyEdit</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/filters.css">
 </head>
 
 <body>
+
     <div class="main-container">
+
         <div class="header-container">
-            <span>easyEdit
-                <i class="ri-image-edit-fill"></i>
+            <span>easyedit <i class="ri-image-edit-fill"></i>
             </span>
 
-            <button class="btn-main">export<i class="ri-upload-2-fill"></i></button>
+            <a  id="export-btn">export<i class="ri-upload-2-fill"></i> </a>
         </div>
-        <div class="middle-container">
 
-            <div class="img-uploder-container">
+        <div class="display-container">
 
-                <div class="img-uploder" id="img-uploder">
-                    <label for="main-img">upload image <i class="ri-upload-line"></i></label>
-                    <input type="file" accept="image" id="main-img">
+            <div class="left-img-container">
+
+                <div class="image-uploader" id="image-uploader">
+                    <label for="main-img"> upload Image <i class="ri-upload-line"></i></label>
+                    <input type="file" accept="image/*" id="main-img">
                 </div>
 
-                <div id="edit-img">
+                <div id="img-container">
                     <img src="#" id="img-main">
                 </div>
 
             </div>
-            <div class="filter-container">
-                <div class="filters-section">
-                    <div class="filters">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+
+            <div class="right-filter-contaner">
+                <div class="filter-container">
+
+                    <div class="filters pastel" >
+                        <img src="./images/filters.jpeg">
                     </div>
+
+                    <div class="filters aqua">
+                        <img src="./images/filters.jpeg">
+                    </div>
+
+                    <div class="filters twilight">
+                        <img src="./images/filters.jpeg">
+                    </div>
+                    <div class="filters ghostly">
+                        <img src="./images/filters.jpeg">
+                    </div>
+                    <div class="filters warm">
+                        <img src="./images/filters.jpeg">
+                    </div>
+                    <div class="filters cool">
+                        <img src="./images/filters.jpeg">
+                    </div>
+                    <div class="filters blackwhite">
+                        <img src="./images/filters.jpeg">
+                    </div>
+                    <div class="filters dark">
+                        <img src="./images/filters.jpeg">
+                    </div>
+                    <div class="filters dreamy">
+                        <img src="./images/filters.jpeg">
+                    </div>
+                    <div class="filters cinematic">
+                        <img src="./images/filters.jpeg">
+                    </div>
+                    <div class="filters vintage">
+                        <img src="./images/filters.jpeg">
+                    </div>
+                    <div class="filters vibrant">
+                        <img src="./images/filters.jpeg">
+                    </div>
+
                 </div>
             </div>
         </div>
+
         <div class="footer-container">
-            <div class="save">Save<i class="ri-save-2-line"></i></div>
-
-            <div class="edit-item">
-                <div class="edit-item-1">
-                    <i id="pannel-setting-open" class="ri-brush-ai-fill"></i>
-
-                </div>
-                <div class="edit-item-1">
-                    <i class="ri-contrast-drop-2-line"></i>
-                </div>
-
-                <div class="edit-item-1">
-                    <i class="ri-crop-line"></i>
-                </div>
+            <div id="delete">
+                delete
             </div>
 
-            <div class="edit-item-2"> ?</div>
+            <div class="setting-container">
+                <div id="panner-setting-handeler"><i class="ri-brush-fill"></i></div>
+                <div id="random-img-header"><i class="ri-lightbulb-fill"></i></div>
+            </div>
+
+            <div class="setting-container">
+                <div>?</div>
+            </div>
+
+
         </div>
-        <div class="setting" id="setting">
+
+        <div class="settings" id="settings">
             <div class="setting-pannel" id="setting-pannel">
-                  <div id="setting-heading"> Settings</div>
+
+                <div id="setting-heading"> Settings</div>
+
                 <form>
                     <div>
                         <label for="Brightness">Brightness: </label>
@@ -110,13 +139,44 @@
                     <div>
                         <label for="Blur">Blur: </label>
                         <input type="range" id="Blur">
-
                     </div>
+
+                    <!-- <div>
+                     <input type="reset" value="Reset">
+                 </div> -->
+                </form>
+
             </div>
         </div>
 
 
-        <script src="./scripts/script.js"></script>
+        <div id="random-img-container">
+             
+        </div>
+
+
+        <div id="loader">
+            <div class="loader-img-container">
+                <img src="./images/bgimg.jpeg">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="loader-text-container">
+                <div class="main-loader">
+                    <div class="loder"></div>
+                </div>
+                <h3>loading...</h3>
+            </div>
+        </div>
+
+        <div id="notificationBar">
+             <h3 id="notificationText">hello,welcome</h3>
+        </div>
+    </div>
+
+
+
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
